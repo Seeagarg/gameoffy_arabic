@@ -1,0 +1,159 @@
+.container{
+    background-color: black;
+}
+.item{
+    padding: 2rem;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    /* padding: 2rem; */
+    width: 100%;
+}
+
+
+.title{
+    /* padding: 1rem; */
+    /* background-color: rgba(240, 221, 49, 0.822); */
+    backdrop-filter: brightness(30%);
+    color: #ffb31c;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.small_line{
+    width: 10%;
+    background-color: white;
+    padding: 2px;
+    filter: brightness(50%);
+}
+
+.large_line{
+    width: 60%;
+    background-color: white;
+    padding: 2px;
+    filter: brightness(70%);
+}
+
+.text{
+    width: 20%;
+    padding-left: 1rem;
+    text-align: start;
+    font-size: 1.5rem;
+}
+
+.btn_div{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    /* padding-right: 2rem; */
+}
+
+
+.Btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  
+  
+
+
+  .Btn::before {
+    position: absolute;
+    content: "View All";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  
+  .Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:active {
+    transform: scale(0.95);
+  }
+
+
+  .btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  
+  
+
+
+  .btn::before {
+    position: absolute;
+    content: "عرض الكل";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  
+  .btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }

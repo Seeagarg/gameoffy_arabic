@@ -1,0 +1,47 @@
+.container{
+    min-height: 100dvh;
+    background-color: black;
+}
+
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* padding: 1rem; */
+}
+
+.category_name{
+    width: 80%;
+    color: #ffb31c;
+    /* color: white; */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.logo{
+    width: 10%;
+    padding: 1rem;
+}
+    
+.img{
+    width: 80%;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.back_logo{
+    width: 10%;
+    padding: 1rem;
+}
+.back_logo_img{
+    /* width: 80%; */
+    height: 4rem;
+    cursor: pointer;
+}
+
+
+    
+

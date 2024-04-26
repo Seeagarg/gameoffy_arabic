@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@19,44.7&family=Jacques+Francois+Shadow&family=Noto+Sans+Khojki&family=Protest+Guerrilla&family=Protest+Revolution&family=Protest+Riot&family=Rubik+Glitch+Pop&display=swap');
+
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+
+}
+
+.bg_img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.front{
+    position: absolute;
+    right: 0;
+    backdrop-filter: brightness(50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.front_img:hover{
+    scale: 1.1;
+}
+
+.front_img{
+    position: absolute;
+    right: 10%;
+    top: 5rem;
+    z-index: 99;
+}
+
+.title_div{
+    top: 20%;
+    left: 10rem;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+}
+
+
+.title{
+    
+    color: green;
+    position: absolute;
+    top: 10rem;
+    left: 10%;
+    font-size: 3rem;
+    margin: 0;
+   
+    font-family: 'Jacques Francois Shadow';
+    font-weight: bold;
+
+}
+
+
+.title_desc{
+    color: white;
+    position: absolute;
+
+    top: 12rem;
+    left: 10%;
+  
+    
+}
+
+.animation{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 30%;
+}
+
+.front_img img{
+    width: 20rem;
+    height: 20rem;
+    
+}
+
+
+@media only screen and (max-width:728px){
+    .front{
+        position: absolute;
+        right: 0;
+        backdrop-filter: brightness(50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .front_img{
+        position: absolute;
+        right: 0rem;
+        top: 3rem;
+        z-index: 99;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .front_img img{
+        width: 18rem;
+        height: 18rem;
+        
+    }
+
+
+    .title_div{
+        top: 18%;
+        left: 0rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .title{
+        
+        color: green;
+        position: absolute;
+        top: 18rem;
+        left: 0rem;
+        font-size: 3rem;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+       
+    }
+    
+    
+    .title_desc{
+        color: white;
+        position: absolute;
+        width: 100%;
+        top: 20rem;
+        text-align: center;
+        left: 0rem;
+      
+        
+    }
+}

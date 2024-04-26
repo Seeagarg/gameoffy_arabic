@@ -1,0 +1,240 @@
+.container{
+    display: flex;
+    /* width: 100%; */
+    padding: 1rem;
+    /* padding: 1rem; */
+    background-color: black;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu{
+  display: none;
+}
+
+.logo{
+width: 20%;
+display: flex;
+align-items: center;
+font-family: "Jacques Francois Shadow";
+/* justify-content: center; */
+color: white;
+gap: 1rem;
+font-size: 2rem;
+}
+
+.img{
+    /* width: 100%; */
+    height: 4rem;
+}
+
+.categories{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+}
+
+.item{
+    padding: 1rem;
+}
+
+.link{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover{
+  font-size: 1.2rem;
+  color: #ffb31c;
+  text-decoration: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  .text{
+  position:absolute;
+  left:15px;
+  top:4px;
+  color:yellow;
+  }
+  
+  .btn {
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(to top, #fab803cb, #ffb31c, #d8aa04cc);
+    color: black;
+   
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .btn span {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+  }
+  
+  .btn_text_one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn_text_two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn:hover .btn_text_one {
+    top: -100%;
+  }
+  
+  .btn:hover .btn_text_two {
+    top: 50%;
+  }
+
+
+  /*pushing a hamburger menu into a pillow texture like background*/
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13%;
+  color: #090909;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 0.5em;
+  background: #ffb31c;
+  border: 1px solid #171717;
+  /* transition: all .3s; */
+  cursor: pointer;
+  box-shadow: inset 4px 4px 12px #ffb31c,
+             inset -4px -4px 12px #ffb31c;
+}
+
+.menuButton:hover {
+  border: 1px solid black;
+}
+
+.menuButton:hover{
+  color: #666;
+  box-shadow: 6px 6px 12px #ffb31c,
+             -6px -6px 12px #ffb31c;
+}
+
+input[type = "checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.menuButton span {
+  width: 30px;
+  height: 4px;
+  background: black;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+
+
+.SideBar{
+  background-color: #090909 !important ;
+  width: 15rem;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+.list{
+  /* background-color: #090909; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  /* background-color: #ffb31c; */
+  padding: 1rem;
+  padding-top: 2rem;
+  
+}
+
+.list_item{
+  color: white;
+  padding: 0.8rem 1rem;
+  background-color: black;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #e8e8e810;
+  color: #e8e8e8;
+  border: 1px solid #e8e8e870;
+  /* border-radius: 15px; */
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+}
+
+
+.list_item:hover {
+  border: 1px solid #ffb31c;
+  background-color: #00000000;
+}
+
+.title{
+  color: #ffb31c;
+}
+
+/* .active{
+  border: 1.2px solid #ffb31c;
+  background-color: #00000000;
+} */
+
+@media only screen and (max-width:1380px){
+  .item{
+    padding: 1rem;
+    display: none;
+}
+
+.categories{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  align-items: center;
+}
+
+.menu{
+  display: block;
+}
+
+}
+
+
+@media only screen and (max-width:676px) {
+  .title{
+    display: none;
+  }
+}
